@@ -78,6 +78,7 @@ button {
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .task-value {
@@ -109,6 +110,12 @@ button {
 
 .button__add:hover {
   color: #0fc57c;
+}
+
+#add-task{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* Task list */
@@ -169,4 +176,12 @@ button {
 
 .task-list__edit .task-label {
   display: none;
+}
+
+.task-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
