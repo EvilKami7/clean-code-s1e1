@@ -25,7 +25,7 @@ body {
   .page-header {
     text-align: center;
   }
-  
+
 }
 
 .page-main {
@@ -148,9 +148,7 @@ button {
 }
 
 .button-img:hover {
-
-  transform: rotateZ(0)
-
+  transform: rotateZ(0);
 }
 
 /* Completed */
@@ -165,8 +163,7 @@ button {
 }
 
 .task-list__edit .task-value {
-
-  display: inline-block
+  display: inline-block;
   width: 224px
 }
 
