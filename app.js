@@ -9,7 +9,7 @@
 // Event handling, user interaction is what starts the code execution.
 
 let taskInput = document.getElementById("new-task");//Add a new task.
-let addButton = document.getElementsByTagName("button")[0];//first button
+let addButton = document.getElementsByClassName("button__add")[0];//first button
 let incompleteTaskHolder = document.getElementById("main-task__incomplete");//ul of #incompleteTasks
 let completedTasksHolder = document.getElementById("main-task__completed");//completed-tasks
 
@@ -85,8 +85,8 @@ let editTask=function(){
 
   let listItem = this.parentNode;
 
-  let editInput = listItem.querySelector("input[type=text]");
-  let label = listItem.querySelector("label");
+  let editInput = listItem.querySelector(".task-value");
+  let label = listItem.querySelector(".task-label");
   let editBtn = listItem.querySelector(".button__edit");
   let containsClass = listItem.classList.contains("task-list__edit");
   //If class of the parent is .task-list__edit
@@ -158,7 +158,7 @@ addButton.addEventListener("click", ajaxRequest);
 let bindTaskEvents = function(taskListItem, checkBoxEventHandler){
   console.log("bind list item events");
 //select ListItems children
-  let checkBox = taskListItem.querySelector("input[type=checkbox]");
+  let checkBox = taskListItem.querySelector(".task-list__checkbox");
   let editButton = taskListItem.querySelector(".button__edit");
   let deleteButton = taskListItem.querySelector(".button__delete");
 
